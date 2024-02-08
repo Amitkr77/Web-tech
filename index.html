@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tourism</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="navbar bg-base-100 fixed">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Home</a></li>
+            <li>
+              <a>Service</a>
+              <ul class="p-2">
+                <li><a>Transport</a></li>
+                <li><a>Hotels</a></li>
+              </ul>
+            </li>
+            <li><a>Blog</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Travelii</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li>
+            <details>
+              <summary>Service</summary>
+              <ul class="p-2">
+                <li><a>Transport</a></li>
+                <li><a>Hotels</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Blog</a></li>
+        </ul>
+      </div>
+      
+      <div class="navbar-end">
+        <a><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="24"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM620-280q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z"/></svg></a>
+      </div>
+    </div>
+    <!--  End of Header -->
+
+    <!-- Main Content -->
+    <div
+      class="hero min-h-screen"
+      style="background-image: url(./image/hero-image.jpg)"
+    >
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold text-amber-300">India Tourism</h1>
+          <p class="mb-5">
+            Incredible India to reflect the awe-inspiring experiences and
+            cultural rich that travelers can when exploring India's diverse
+            destinations
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- component -->
+    <!-- This is an example component -->
+    <section class="transparent text-gray-100">
+      <div class="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
+        <a
+          rel="noopener noreferrer"
+          href="#"
+          class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-gray-700"
+        >
+          <img
+            src="./image/bihar.jpg"
+            alt=""
+            class="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 bg-gray-500"
+          />
+          <div class="p-6 space-y-2 lg:col-span-5">
+            <h3
+              class="text-2xl font-semibold sm:text-4xl group-hover:underline group-focus:underline"
+            >
+              Ghora katora lake
+            </h3>
+            <span class="text-xs text-gray-400">Bihar</span>
+            <p>
+              Ghora katora lake is a beautiful sot near Rajgir. It is said that
+              the horsres if the king of Rajgir used to drink water here. The
+              shape of the lake resembles that of a horse and the lake is
+              surrounded by mountains on three of the silde.
+            </p>
+          </div>
+        </a>
+        <div
+          class="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            class="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-700"
+          >
+            <img
+              role="presentation"
+              class="object-cover w-full rounded h-44 bg-gray-500"
+              src="./image/golden-temple.jpg"
+            />
+            <div class="p-6 space-y-2">
+              <h3
+                class="text-2xl font-semibold group-hover:underline group-focus:underline"
+              >
+                Golden Temple
+              </h3>
+              <span class="text-xs text-gray-400">Amritsar</span>
+              <p>
+                The Golden Temple is a gurdwara located in the city of Amritsar,
+                Punjab, India. It is the pre-eminent spiritual site of Sikhism.
+                It is one of the holiest sites in Sikhism, alongside the
+                Gurdwara Darbar Sahib Kartarpur in Kartarpur, and Gurdwara Janam
+                Asthan in Nankana Sahib.
+              </p>
+            </div>
+          </a>
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            class="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-700"
+          >
+            <img
+              role="presentation"
+              class="object-cover w-full rounded h-44 bg-gray-500"
+              src="./image/hawa-mahal.jpg"
+            />
+            <div class="p-6 space-y-2">
+              <h3
+                class="text-2xl font-semibold group-hover:underline group-focus:underline"
+              >
+                Hawa Mahal
+              </h3>
+              <span class="text-xs text-gray-400">Jaipur</span>
+              <p>
+                The Hawa Mahal is a palace in the city of Jaipur, Rajasthan,
+                India. Built from red and pink sandstone, it is on the edge of
+                the City Palace, Jaipur, and extends to the Zenana, or
+                women's chambers.
+              </p>
+            </div>
+          </a>
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            class="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-700"
+          >
+            <img
+              role="presentation"
+              class="object-cover w-full rounded h-44 bg-gray-500"
+              src="./image/Victoria_Memorial_situated_in_Kolkata.jpg"
+            />
+            <div class="p-6 space-y-2">
+              <h3
+                class="text-2xl font-semibold group-hover:underline group-focus:underline"
+              >
+                Victoria Memorial
+              </h3>
+              <span class="text-xs text-gray-400">kolkata</span>
+              <p>
+                The Victoria Memorial is a large marble monument dedicated to
+                Queen Victoria, the Empress of India facing the Queens Way on
+                the Maidan in Central Kolkata. It was built between 1906 and
+                1921 by the British Raj. It is the largest monument to a monarch
+                anywhere in the world.
+              </p>
+            </div>
+          </a>
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            class="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-700 hidden sm:block"
+          >
+            <img
+              role="presentation"
+              class="object-cover w-full rounded h-44 bg-gray-500"
+              src="./image/Red-fort.jpg"
+            />
+            <div class="p-6 space-y-2">
+              <h3
+                class="text-2xl font-semibold group-hover:underline group-focus:underline"
+              >
+                Red fort
+              </h3>
+              <span class="text-xs text-gray-400">Delhi</span>
+              <p>
+                The Red Fort or Lal Qila is a historic fort in the Old Delhi
+                neighbourhood of Delhi, India, that historically served as the
+                main residence of the Mughal emperors. Emperor Shah Jahan
+                commissioned construction of the Red Fort on 12 May 1639, when
+                he decided to shift his capital from Agra to Delhi.
+              </p>
+            </div>
+          </a>
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            class="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-700 hidden sm:block"
+          >
+            <img
+              role="presentation"
+              class="object-cover w-full rounded h-44 bg-gray-500"
+              src="./image/TAJ-MAHAL-PD-BLOG.jpg"
+            />
+            <div class="p-6 space-y-2">
+              <h3
+                class="text-2xl font-semibold group-hover:underline group-focus:underline"
+              >
+                Taj Mahal
+              </h3>
+              <span class="text-xs text-gray-400">Agra</span>
+              <p>
+                The Taj Mahal is an ivory-white marble mausoleum on the right
+                bank of the river Yamuna in Agra, Uttar Pradesh, India. It was
+                commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to
+                house the tomb of his beloved wife, Mumtaz Mahal; it also houses
+                the tomb of Shah Jahan himself.
+              </p>
+            </div>
+          </a>
+          <a
+            rel="noopener noreferrer"
+            href="#"
+            class="max-w-sm mx-auto group hover:no-underline focus:no-underline bg-gray-700 hidden sm:block"
+          >
+            <img
+              role="presentation"
+              class="object-cover w-full rounded h-44 bg-gray-500"
+              src="./image/gateway-to-india.jpg"
+            />
+            <div class="p-6 space-y-2">
+              <h3
+                class="text-2xl font-semibold group-hover:underline group-focus:underline"
+              >
+                The Gateway of India
+              </h3>
+              <span class="text-xs text-gray-400"> Mumbai</span>
+              <p>
+                The Gateway of India is an arch-monument completed in 1924 on
+                the waterfront of Mumbai, India. It was erected to commemorate
+                the landing of George V for his coronation as the Emperor of
+                India in December 1911 at Strand Road near Wellington Fountain.
+                He was the first British monarch to visit India.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <button
+            type="button"
+            class="px-6 py-3 text-sm rounded-md hover:underline bg-gray-900 text-white"
+          >
+            Load more posts...
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css"
+      rel="stylesheet"
+    />
+
+    <script type="module">
+      import KeenSlider from "https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm";
+
+      const keenSlider = new KeenSlider(
+        "#keen-slider",
+        {
+          loop: true,
+          slides: {
+            origin: "center",
+            perView: 1.25,
+            spacing: 16,
+          },
+          breakpoints: {
+            "(min-width: 1024px)": {
+              slides: {
+                origin: "auto",
+                perView: 1.5,
+                spacing: 32,
+              },
+            },
+          },
+        },
+        []
+      );
+
+      const keenSliderPrevious = document.getElementById(
+        "keen-slider-previous"
+      );
+      const keenSliderNext = document.getElementById("keen-slider-next");
+
+      const keenSliderPreviousDesktop = document.getElementById(
+        "keen-slider-previous-desktop"
+      );
+      const keenSliderNextDesktop = document.getElementById(
+        "keen-slider-next-desktop"
+      );
+
+      keenSliderPrevious.addEventListener("click", () => keenSlider.prev());
+      keenSliderNext.addEventListener("click", () => keenSlider.next());
+
+      keenSliderPreviousDesktop.addEventListener("click", () =>
+        keenSlider.prev()
+      );
+      keenSliderNextDesktop.addEventListener("click", () => keenSlider.next());
+    </script>
+
+    <section class="bg-gray-50">
+      <div
+        class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24"
+      >
+        <div
+          class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16"
+        >
+          <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+            <h2
+              class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            >
+              A quote we love
+            </h2>
+
+            <p class="mt-4 text-gray-700">
+              hese are noodles with a mean streak, a potent lashing of hot chile
+              and oil, laced with just enough Sichuan peppercorn to numb your
+              palate, to make the next bite not just tolerable but actually kind
+              of great
+            </p>
+
+            <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+              <button
+                aria-label="Previous slide"
+                id="keen-slider-previous-desktop"
+                class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5 rtl:rotate-180"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </button>
+
+              <button
+                aria-label="Next slide"
+                id="keen-slider-next-desktop"
+                class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+              >
+                <svg
+                  class="size-5 rtl:rotate-180"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 5l7 7-7 7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="-mx-6 lg:col-span-2 lg:mx-0">
+            <div id="keen-slider" class="keen-slider">
+              <div class="keen-slider__slide">
+                <blockquote
+                  class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                >
+                  <div>
+                    <div class="flex gap-0.5 text-green-500">
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="mt-4">
+                      <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                        Stayin' Alive
+                      </p>
+
+                      <p class="mt-4 leading-relaxed text-gray-700">
+                        No, Rose, they are not breathing. And they have no arms
+                        or legs … Where are they? You know what? If we come
+                        across somebody with no arms or legs, do we bother
+                        resuscitating them? I mean, what quality of life do we
+                        have there?
+                      </p>
+                    </div>
+                  </div>
+
+                  <footer
+                    class="mt-4 text-sm font-medium text-gray-700 sm:mt-6"
+                  >
+                    &mdash; Michael Scott
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div class="keen-slider__slide">
+                <blockquote
+                  class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                >
+                  <div>
+                    <div class="flex gap-0.5 text-green-500">
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="mt-4">
+                      <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                        Stayin' Alive
+                      </p>
+
+                      <p class="mt-4 leading-relaxed text-gray-700">
+                        No, Rose, they are not breathing. And they have no arms
+                        or legs … Where are they? You know what? If we come
+                        across somebody with no arms or legs, do we bother
+                        resuscitating them? I mean, what quality of life do we
+                        have there?
+                      </p>
+                    </div>
+                  </div>
+
+                  <footer
+                    class="mt-4 text-sm font-medium text-gray-700 sm:mt-6"
+                  >
+                    &mdash; Michael Scott
+                  </footer>
+                </blockquote>
+              </div>
+
+              <div class="keen-slider__slide">
+                <blockquote
+                  class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12"
+                >
+                  <div>
+                    <div class="flex gap-0.5 text-green-500">
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+
+                      <svg
+                        class="h-5 w-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="mt-4">
+                      <p class="text-2xl font-bold text-rose-600 sm:text-3xl">
+                        Stayin' Alive
+                      </p>
+
+                      <p class="mt-4 leading-relaxed text-gray-700">
+                        No, Rose, they are not breathing. And they have no arms
+                        or legs … Where are they? You know what? If we come
+                        across somebody with no arms or legs, do we bother
+                        resuscitating them? I mean, what quality of life do we
+                        have there?
+                      </p>
+                    </div>
+                  </div>
+
+                  <footer
+                    class="mt-4 text-sm font-medium text-gray-700 sm:mt-6"
+                  >
+                    &mdash; Michael Scott
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 flex justify-center gap-4 lg:hidden">
+          <button
+            aria-label="Previous slide"
+            id="keen-slider-previous"
+            class="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+          >
+            <svg
+              class="size-5 -rotate-180 transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+
+          <button
+            aria-label="Next slide"
+            id="keen-slider-next"
+            class="rounded-full border border-rose-600 p-4 text-rose-600 transition hover:bg-rose-600 hover:text-white"
+          >
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENd  of Testimonials -->
+
+    <!-- Foooter -->
+
+    <section class="bg-white">
+      <div
+        class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
+      >
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+          <div class="px-5 py-2">
+            <a
+              href="#"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              About
+            </a>
+          </div>
+          <div class="px-5 py-2">
+            <a
+              href="#"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Blog
+            </a>
+          </div>
+          <div class="px-5 py-2">
+            <a
+              href="#"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Team
+            </a>
+          </div>
+          <div class="px-5 py-2">
+            <a
+              href="#"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Pricing
+            </a>
+          </div>
+          <div class="px-5 py-2">
+            <a
+              href="#"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Contact
+            </a>
+          </div>
+          <div class="px-5 py-2">
+            <a
+              href="#"
+              class="text-base leading-6 text-gray-500 hover:text-gray-900"
+            >
+              Terms
+            </a>
+          </div>
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              ></path>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Dribbble</span>
+            <svg
+              class="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <pre class="mt-8 text-base leading-6 text-center text-gray-400">
+          © 2023 Travelii, Inc. All rights reserved.
+          Developed by Amit kumar &#10084;
+        </pre>
+      </div>
+    </section>
+
+    <!-- end of footer -->
+  </body>
+</html>
